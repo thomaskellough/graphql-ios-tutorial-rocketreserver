@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCE264032647523900941000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE264022647523900941000 /* AppDelegate.swift */; };
+		BCE264052647523900941000 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE264042647523900941000 /* SceneDelegate.swift */; };
+		BCE264072647523900941000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE264062647523900941000 /* ViewController.swift */; };
+		BCE2640A2647523900941000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE264082647523900941000 /* Main.storyboard */; };
+		BCE2640C2647523B00941000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE2640B2647523B00941000 /* Assets.xcassets */; };
+		BCE2640F2647523B00941000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2640D2647523B00941000 /* LaunchScreen.storyboard */; };
+		BCE26418264752A100941000 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = BCE26417264752A100941000 /* Apollo */; };
+		BCE2641A264752A100941000 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = BCE26419264752A100941000 /* ApolloWebSocket */; };
+		BCE2641F26475F7D00941000 /* LaunchList.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BCE2641E26475F7D00941000 /* LaunchList.graphql */; };
+		BCE26421264761DD00941000 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE26420264761DD00941000 /* API.swift */; };
+		BCE264232647628500941000 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE264222647628500941000 /* Network.swift */; };
+		BCE2642726476A3700941000 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2642626476A3700941000 /* DetailViewController.swift */; };
+		BCE2642A26476D4100941000 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BCE2642926476D4100941000 /* SDWebImage */; };
+		BCE2642C26487EA100941000 /* LaunchDetails.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BCE2642B26487EA100941000 /* LaunchDetails.graphql */; };
+		BCE2642E26488CAE00941000 /* Login.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BCE2642D26488CAE00941000 /* Login.graphql */; };
+		BCE2643026488CF200941000 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2642F26488CF200941000 /* LoginViewController.swift */; };
+		BCE2643326488FF800941000 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BCE2643226488FF800941000 /* KeychainSwift */; };
+		BCE264352648940100941000 /* TokenAddingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE264342648940100941000 /* TokenAddingInterceptor.swift */; };
+		BCE26437264894C100941000 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE26436264894C100941000 /* NetworkInterceptorProvider.swift */; };
+		BCE264392648978B00941000 /* BookTrip.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BCE264382648978B00941000 /* BookTrip.graphql */; };
+		BCE2643B2648990200941000 /* CancelTrip.graphql in Sources */ = {isa = PBXBuildFile; fileRef = BCE2643A2648990200941000 /* CancelTrip.graphql */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCE263FF2647523900941000 /* RocketReserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketReserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE264022647523900941000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCE264042647523900941000 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCE264062647523900941000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCE264092647523900941000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCE2640B2647523B00941000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCE2640E2647523B00941000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCE264102647523B00941000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE2641C264753ED00941000 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		BCE2641E26475F7D00941000 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; name = LaunchList.graphql; path = GraphQL/LaunchList.graphql; sourceTree = "<group>"; };
+		BCE26420264761DD00941000 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BCE264222647628500941000 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BCE2642626476A3700941000 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BCE2642B26487EA100941000 /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
+		BCE2642D26488CAE00941000 /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		BCE2642F26488CF200941000 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BCE264342648940100941000 /* TokenAddingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAddingInterceptor.swift; sourceTree = "<group>"; };
+		BCE26436264894C100941000 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		BCE264382648978B00941000 /* BookTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookTrip.graphql; sourceTree = "<group>"; };
+		BCE2643A2648990200941000 /* CancelTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CancelTrip.graphql; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCE263FC2647523900941000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE2642A26476D4100941000 /* SDWebImage in Frameworks */,
+				BCE26418264752A100941000 /* Apollo in Frameworks */,
+				BCE2643326488FF800941000 /* KeychainSwift in Frameworks */,
+				BCE2641A264752A100941000 /* ApolloWebSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCE263F62647523900941000 = {
+			isa = PBXGroup;
+			children = (
+				BCE264012647523900941000 /* RocketReserver */,
+				BCE264002647523900941000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCE264002647523900941000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCE263FF2647523900941000 /* RocketReserver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCE264012647523900941000 /* RocketReserver */ = {
+			isa = PBXGroup;
+			children = (
+				BCE26420264761DD00941000 /* API.swift */,
+				BCE2641E26475F7D00941000 /* LaunchList.graphql */,
+				BCE2641D26475F3C00941000 /* GraphQL */,
+				BCE264022647523900941000 /* AppDelegate.swift */,
+				BCE264042647523900941000 /* SceneDelegate.swift */,
+				BCE264062647523900941000 /* ViewController.swift */,
+				BCE264082647523900941000 /* Main.storyboard */,
+				BCE2640B2647523B00941000 /* Assets.xcassets */,
+				BCE2641C264753ED00941000 /* schema.json */,
+				BCE2640D2647523B00941000 /* LaunchScreen.storyboard */,
+				BCE264102647523B00941000 /* Info.plist */,
+				BCE264222647628500941000 /* Network.swift */,
+				BCE2642626476A3700941000 /* DetailViewController.swift */,
+				BCE2642B26487EA100941000 /* LaunchDetails.graphql */,
+				BCE2642D26488CAE00941000 /* Login.graphql */,
+				BCE2642F26488CF200941000 /* LoginViewController.swift */,
+				BCE264342648940100941000 /* TokenAddingInterceptor.swift */,
+				BCE26436264894C100941000 /* NetworkInterceptorProvider.swift */,
+				BCE264382648978B00941000 /* BookTrip.graphql */,
+				BCE2643A2648990200941000 /* CancelTrip.graphql */,
+			);
+			path = RocketReserver;
+			sourceTree = "<group>";
+		};
+		BCE2641D26475F3C00941000 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCE263FE2647523900941000 /* RocketReserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE264132647523B00941000 /* Build configuration list for PBXNativeTarget "RocketReserver" */;
+			buildPhases = (
+				BCE2641B2647532F00941000 /* Apollo CLI */,
+				BCE263FB2647523900941000 /* Sources */,
+				BCE263FC2647523900941000 /* Frameworks */,
+				BCE263FD2647523900941000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RocketReserver;
+			packageProductDependencies = (
+				BCE26417264752A100941000 /* Apollo */,
+				BCE26419264752A100941000 /* ApolloWebSocket */,
+				BCE2642926476D4100941000 /* SDWebImage */,
+				BCE2643226488FF800941000 /* KeychainSwift */,
+			);
+			productName = RocketReserver;
+			productReference = BCE263FF2647523900941000 /* RocketReserver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCE263F72647523900941000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BCE263FE2647523900941000 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = BCE263FA2647523900941000 /* Build configuration list for PBXProject "RocketReserver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCE263F62647523900941000;
+			packageReferences = (
+				BCE26416264752A100941000 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				BCE2642826476D4100941000 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BCE2643126488FF800941000 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = BCE264002647523900941000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCE263FE2647523900941000 /* RocketReserver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCE263FD2647523900941000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE2640F2647523B00941000 /* LaunchScreen.storyboard in Resources */,
+				BCE2640C2647523B00941000 /* Assets.xcassets in Resources */,
+				BCE2640A2647523900941000 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCE2641B2647532F00941000 /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://apollo-fullstack-tutorial.herokuapp.com/\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCE263FB2647523900941000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE264072647523900941000 /* ViewController.swift in Sources */,
+				BCE264032647523900941000 /* AppDelegate.swift in Sources */,
+				BCE264232647628500941000 /* Network.swift in Sources */,
+				BCE2642E26488CAE00941000 /* Login.graphql in Sources */,
+				BCE264352648940100941000 /* TokenAddingInterceptor.swift in Sources */,
+				BCE264392648978B00941000 /* BookTrip.graphql in Sources */,
+				BCE264052647523900941000 /* SceneDelegate.swift in Sources */,
+				BCE26437264894C100941000 /* NetworkInterceptorProvider.swift in Sources */,
+				BCE2642C26487EA100941000 /* LaunchDetails.graphql in Sources */,
+				BCE2641F26475F7D00941000 /* LaunchList.graphql in Sources */,
+				BCE26421264761DD00941000 /* API.swift in Sources */,
+				BCE2643026488CF200941000 /* LoginViewController.swift in Sources */,
+				BCE2642726476A3700941000 /* DetailViewController.swift in Sources */,
+				BCE2643B2648990200941000 /* CancelTrip.graphql in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCE264082647523900941000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE264092647523900941000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCE2640D2647523B00941000 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE2640E2647523B00941000 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCE264112647523B00941000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCE264122647523B00941000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCE264142647523B00941000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GMC4Z3BP4Y;
+				INFOPLIST_FILE = RocketReserver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellough.appiconchange.RocketReserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCE264152647523B00941000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GMC4Z3BP4Y;
+				INFOPLIST_FILE = RocketReserver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellough.appiconchange.RocketReserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCE263FA2647523900941000 /* Build configuration list for PBXProject "RocketReserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE264112647523B00941000 /* Debug */,
+				BCE264122647523B00941000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE264132647523B00941000 /* Build configuration list for PBXNativeTarget "RocketReserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE264142647523B00941000 /* Debug */,
+				BCE264152647523B00941000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCE26416264752A100941000 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.43.0;
+			};
+		};
+		BCE2642826476D4100941000 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+		BCE2643126488FF800941000 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCE26417264752A100941000 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCE26416264752A100941000 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		BCE26419264752A100941000 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCE26416264752A100941000 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		BCE2642926476D4100941000 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCE2642826476D4100941000 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BCE2643226488FF800941000 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCE2643126488FF800941000 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BCE263F72647523900941000 /* Project object */;
+}
